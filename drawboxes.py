@@ -280,6 +280,6 @@ while i<cont:
     ippath = 'model/yolov5/runs/detect/ins_points/' + nom[i] + '.txt'
     dictg = draw_boxes(ippath, pspath, imagepath)
     #save json file 
-    with open(nom[i] +'.json', 'w') as fp:
+    with open('boxes/' + nom[i] +'.json', 'w') as fp:
         json.dump(dictg, fp)
     i = i+1 
